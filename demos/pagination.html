@@ -2,20 +2,20 @@
 <html>
 	<head>
 		<meta charset="utf-8">		
-		<link rel="stylesheet" href="/static/css/styles.css" />
-		<link rel="stylesheet" href="/static/css/webpageui.css" />		
-		<link rel="stylesheet" href="/static/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="/static/css/theme.css" />
+		<link rel="stylesheet" href="/WebPageUI/static/css/styles.css" />
+		<link rel="stylesheet" href="/WebPageUI/static/css/webpageui.css" />		
+		<link rel="stylesheet" href="/WebPageUI/static/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/WebPageUI/static/css/theme.css" />
 		<!--[if lt IE 10]>
-			<link rel="stylesheet" href="./static/iefix.css" />
+			<link rel="stylesheet" href="/WebPageUI/static/iefix.css" />
 		<![endif]-->
-		<script type="text/javascript" src="/static/js/webpageui.js"></script>
+		<script type="text/javascript" src="/WebPageUI/static/js/webpageui.js"></script>
 		<title>WebPageUI</title>
 	</head>
 	<body class="blackgold">
 		<div class="wpui-grid">
 			<div class="header">
-				<a class="logo" href="/"><img src="../static/images/logo.svg"/></a>
+				<a class="logo" href="/"><img src="/WebPageUI/static/images/logo.svg"/></a>
 			</div>
 			<div class="wpui-panel">				
 				<div class="main">
@@ -66,7 +66,7 @@
 		$wpui.ajax({
 			type: 'GET',
 			dataType: 'text',
-			url: '../templates/menu.html',
+			url: '/WebPageUI/templates/menu.html',
 			success: function (data) {
 				$wpui.DOM.selector('#leftside').innerHTML = data;
 				$wpui.Menu.init('#leftmenu');
