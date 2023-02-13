@@ -46,7 +46,7 @@
 	<body class="blackgold">
 		<div class="wpui-grid">
 			<div class="header">
-				<a class="logo" href="/"><img src="../static/images/logo.svg"/></a>
+				<a class="logo" href="/"><img src="./static/images/logo.svg"/></a>
 			</div>
 			<div class="wpui-panel">				
 				<div class="main">
@@ -76,7 +76,7 @@
 		$wpui.ajax({
 			type: 'GET',
 			dataType: 'text',
-			url: '../templates/menu.html',
+			url: './templates/menu.html',
 			success: function (data) {
 				$wpui.DOM.selector('#leftside').innerHTML = data;
 				$wpui.Menu.init('#leftmenu');
